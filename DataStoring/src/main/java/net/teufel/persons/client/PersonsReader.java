@@ -1,9 +1,7 @@
-package net.teufel.persons.domain.dao;
+package net.teufel.persons.client;
 
-import net.teufel.common.FileReader;
-import net.teufel.persons.domain.Person;
-import net.teufel.persons.domain.PersonParser;
-
+import net.teufel.persons.client.persons.domain.Person;
+import net.teufel.persons.files.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,6 @@
-package net.teufel.persons.domain;
+package net.teufel.persons.client;
+
+import net.teufel.persons.client.persons.domain.Person;
 
 public class PersonParser {
 

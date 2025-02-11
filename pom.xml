@@ -7,6 +7,14 @@
     <groupId>net.teufel</groupId>
     <artifactId>Persons</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ConsoleClient</module>
+        <module>PersonManagement</module>
+        <module>DataClasses</module>
+        <module>DataStoring</module>
+        <module>FileStoring</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

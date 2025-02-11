@@ -1,6 +1,5 @@
-package net.teufel.persons.domain;
+package net.teufel.persons.client;
 
-import net.teufel.persons.domain.dao.PersonRepository;
 
 public class PersonDisplayCommand {
 
@@ -11,11 +10,11 @@ public class PersonDisplayCommand {
     }
 
     public void displayAdults() throws Exception {
-        System.out.println("Erwachsene: " + personRepository.getAdults());
+        System.out.println("!!Erwachsene: " + personRepository.getAdults());
     }
 
     public void displayChildren() throws Exception {
-        System.out.println("Kinder: " + personRepository.getChildren());
+        System.out.println("!!Kinder: " + personRepository.getChildren());
     }
 
 }

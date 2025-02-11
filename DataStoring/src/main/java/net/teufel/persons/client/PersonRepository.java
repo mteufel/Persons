@@ -1,4 +1,4 @@
-package net.teufel.persons.domain.dao;
+package net.teufel.persons.client;
 
 
 public class PersonRepository {

@@ -1,4 +1,4 @@
-package net.teufel.common;
+package net.teufel.persons.files;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
