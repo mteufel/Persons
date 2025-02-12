@@ -1,4 +1,4 @@
-package net.teufel.persons.client;
+package net.teufel.persons.storing;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

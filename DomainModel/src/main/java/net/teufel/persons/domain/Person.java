@@ -1,4 +1,4 @@
-package net.teufel.persons.client.persons.domain;
+package net.teufel.persons.domain;
 
 public class Person {
 

@@ -1,7 +1,7 @@
-package net.teufel.persons.client;
+package net.teufel.persons.storing;
 
-import net.teufel.persons.client.persons.domain.Person;
-import net.teufel.persons.files.FileReader;
+import net.teufel.persons.domain.Person;
+import net.teufel.files.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 

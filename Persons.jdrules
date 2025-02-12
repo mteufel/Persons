@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Queries>
+  <Query Active="True" DisplayList="True" DisplayStat="True" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Pruefung LOC</Name>
+warnif count > 0
+from t in JustMyCode.Types
+where t.NbLinesOfCode > 2
+select new { t, t.NbLinesOfCode, Severity = Severity.High }
+]]></Query>
+  <Query Active="True" DisplayList="True" DisplayStat="True" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Namensmuster Manager</Name>  >
+warnif count > 0 
+
+let blackListed = new string[]
+{
+
+}
+
+let blacklistedNamespaceSuffix = new string[]{}
+let blacklistedNamespacePrefix = new string[]{}
+
+let typesFiltered = JustMyCode.Types
+                    .Where(t => !blackListed.Contains(t.Parent.Name))
+                    .Where(t => !t.IsGeneratedByCompiler)
+
+select typesFiltered]]></Query>
+</Queries>

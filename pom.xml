@@ -11,7 +11,7 @@
     <modules>
         <module>ConsoleClient</module>
         <module>PersonManagement</module>
-        <module>DataClasses</module>
+        <module>DomainModel</module>
         <module>DataStoring</module>
         <module>FileStoring</module>
     </modules>
