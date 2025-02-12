@@ -6,9 +6,9 @@ import java.util.List;
 
 public class FileReader {
 
-    private final String filename;
+    private String filename;
 
-    public FileReader(String filename) {
+    public void setFilename(String filename) {
         this.filename = filename;
     }
 

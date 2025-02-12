@@ -1,5 +1,6 @@
 package net.teufel.persons.storing;
 
+import com.google.inject.Inject;
 import net.teufel.persons.domain.Person;
 import net.teufel.files.FileReader;
 import java.util.ArrayList;
@@ -10,9 +11,12 @@ public class PersonsReader {
     FileReader fileReader;
     PersonParser personParser;
 
-    public PersonsReader(String fileName) {
-        this.fileReader = new FileReader(fileName);
-        this.personParser = new PersonParser();
+    @Inject
+    public PersonsReader(FileReader fileReader, PersonParser personParser) {
+        this.fileReader = fileReader;
+        this.fileReader.setFilename("persons.csv");
+        this.personParser = personParser;
+
     }
 
     public List<Person> read() throws Exception {

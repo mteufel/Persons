@@ -1,14 +1,16 @@
 package net.teufel.persons.management;
 
 
+import com.google.inject.Inject;
 import net.teufel.persons.storing.PersonRepository;
 
 public class PersonManager {
 
     PersonRepository personRepository;
 
-    public PersonManager() {
-        personRepository = new PersonRepository();
+    @Inject
+    public PersonManager(PersonRepository personRepository) {
+        this.personRepository = personRepository;
     }
 
     public long countChildren() throws Exception {

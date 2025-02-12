@@ -1,13 +1,15 @@
 package net.teufel.persons.client;
 
+import com.google.inject.Inject;
 import net.teufel.persons.management.PersonManager;
 
 public class PersonDisplayCommand {
 
     PersonManager personManager;
 
-    public PersonDisplayCommand() {
-        this.personManager = new PersonManager();
+    @Inject
+    public PersonDisplayCommand(PersonManager personManager) {
+        this.personManager = personManager;
     }
 
     public void displayAdults() throws Exception {

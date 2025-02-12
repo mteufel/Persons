@@ -1,14 +1,17 @@
 package net.teufel.persons.storing;
 
 import java.util.List;
+
+import jakarta.inject.Inject;
 import net.teufel.persons.domain.Person;
 
 public class PersonRepository {
 
     private PersonsReader personsReader;
 
-    public PersonRepository() {
-        personsReader = new PersonsReader("persons.csv");
+    @Inject
+    public PersonRepository(PersonsReader personsReader) {
+        this.personsReader = personsReader;
     }
 
     public List<Person> getPersons() throws Exception {
